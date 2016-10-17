@@ -1,0 +1,61 @@
+<html>
+<head>
+    <style>
+        .panel-body {
+            background-color:cornsilk ;
+        }
+    .panel-group{}
+
+
+    </style>
+
+    <title>
+        Calculator
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body style="background-color: darkgray">
+<div class="container">
+    <div class="col-md-12">
+    </div><br><br>
+    <div class="col-md-6 col-md-offset-3">
+        <div class="panel-group">
+            <div class="panel panel-primary">
+                <div class="panel-heading"><h1 style="font-family: cursive;size: 5px;text-align: center"><b>CALCULATOR</b></h1></div>
+                <div class="panel-body">
+                    <form action="calculate" method="post">
+                        <p> <h3 style="font-family: cursive;size: 3px;text-align: justify">Calculate </h3></p><br>
+                        <h4 style="font-family: cursive;size: 3px;text-align: justify">Input 1:&nbsp&nbsp&nbsp<input type="number" name="input1" id="input1" required="required"></h4><br><br>
+                        <h4 style="font-family: cursive;size: 3px;text-align: justify">Input 2:&nbsp&nbsp&nbsp<input type ="number" name="input2" id="input2" required="required"></h4><br><br>
+                       
+                        <button type="submit" class="btn btn-primary btn-sm" value="Addition" name="calculate" id="addition"> <h5 style="font-family: cursive;size: 3px;text-align: justify">Addition</h5></button>
+                        <button type="submit" class="btn btn-primary btn-sm" value="Subtraction" name="calculate" id="subtraction"><h5 style="font-family: cursive;size: 3px;text-align: justify">Subtraction</h5></button>
+                        <button type="submit" class="btn btn-primary btn-sm" value="Multiplication" name="calculate" id="multiply"> <h5 style="font-family: cursive;size: 3px;text-align: justify">Multiplication</h5></button>
+                        <button type="submit" class="btn btn-primary btn-sm" value="Division" name="calculate" id="divide"> <h5 style="font-family: cursive;size: 3px;text-align: justify">Division</h5></button>
+                        <p> <h3 style="font-family: cursive;size: 3px;text-align: justify">output </h3></p>
+                       <!-- <input type="submit" value="Addition" name="calculate" id="addition">
+                        <input type="submit" value="Subtraction" name="calculate" id="subtract">
+                        <input type="submit" value="Multiplication" name="calculate" id="multiply">
+                        <input type="submit" value="Division" name="calculate" id="divide"> -->
+
+                    </form>
+
+
+
+<% if (typeof output !== "undefined") { %>
+<h2><%= output%></h2>
+<% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
